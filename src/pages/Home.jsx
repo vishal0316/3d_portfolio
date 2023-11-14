@@ -5,14 +5,26 @@ import Island from "../models/Island";
 import Sky from "../models/Sky";
 import Bird from "../models/Bird";
 import Plane from "../models/Plane";
-
-{
-  /* <div className="absolute top-28 left-0 right-0 z-10 flex items-center justify-center">  </div>*/
-}
+import HomeInfo from "../components/HomeInfo";
 
 const Home = () => {
   const [isRotating, setIsRotating] = useState(false);
   const [currentStage, setcurrentStage] = useState(1);
+
+  const adjustBiplaneForScreenSize = () => {
+    let screenScale, screenPosition;
+
+    // If screen width is less than 768px, adjust the scale and position
+    if (window.innerWidth < 768) {
+      screenScale = [1.5, 1.5, 1.5];
+      screenPosition = [0, 1.2, 0];
+    } else {
+      screenScale = [3, 3, 3];
+      screenPosition = [1, -5, -4];
+    }
+
+    return [screenScale, screenPosition];
+  };
 
   const adjustIslandForScreenSize = () => {
     let screenScale = null;
@@ -28,27 +40,16 @@ const Home = () => {
     return [screenScale, screenPosition, rotation];
   };
 
-  const adjustBiplaneForScreenSize = () => {
-    let screenScale, screenPosition;
-
-    // If screen width is less than 768px, adjust the scale and position
-    if (window.innerWidth < 768) {
-      screenScale = [1.5, 1.5, 1.5];
-      screenPosition = [0, -1.5, 0];
-    } else {
-      screenScale = [3, 3, 3];
-      screenPosition = [0, -4, -3];
-    }
-
-    return [screenScale, screenPosition];
-  };
-
   const [biplaneScale, biplanePosition] = adjustBiplaneForScreenSize();
   const [islandScale, islandPosition, islandRotaion] =
     adjustIslandForScreenSize();
 
   return (
     <section className="w-full h-screen relative ">
+      <div className="absolute top-28 left-0 right-0 z-10 flex items-center justify-center">
+        {currentStage && <HomeInfo currentStage={currentStage} />}
+      </div>
+
       <Canvas
         className={`w-full h-screen bg-transparent ${
           isRotating ? "cursor-grabbing" : "cursor-grab"
