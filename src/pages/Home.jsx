@@ -12,21 +12,7 @@ import Plane from "../models/Plane";
 
 const Home = () => {
   const [isRotating, setIsRotating] = useState(false);
-
-  const adjustBiplaneForScreenSize = () => {
-    let screenScale, screenPosition;
-
-    // If screen width is less than 768px, adjust the scale and position
-    if (window.innerWidth < 768) {
-      screenScale = [1.5, 1.5, 1.5];
-      screenPosition = [0, -1.5, 0];
-    } else {
-      screenScale = [3, 3, 3];
-      screenPosition = [0, -4, -4];
-    }
-
-    return [screenScale, screenPosition];
-  };
+  const [currentStage, setcurrentStage] = useState(1);
 
   const adjustIslandForScreenSize = () => {
     let screenScale = null;
@@ -40,6 +26,21 @@ const Home = () => {
     }
 
     return [screenScale, screenPosition, rotation];
+  };
+
+  const adjustBiplaneForScreenSize = () => {
+    let screenScale, screenPosition;
+
+    // If screen width is less than 768px, adjust the scale and position
+    if (window.innerWidth < 768) {
+      screenScale = [1.5, 1.5, 1.5];
+      screenPosition = [0, -1.5, 0];
+    } else {
+      screenScale = [3, 3, 3];
+      screenPosition = [0, -4, -3];
+    }
+
+    return [screenScale, screenPosition];
   };
 
   const [biplaneScale, biplanePosition] = adjustBiplaneForScreenSize();
@@ -65,18 +66,20 @@ const Home = () => {
             intensity={1}
           />
           <Bird />
-          <Sky />
+          <Sky isRotating={isRotating} />
           <Island
             position={islandPosition}
             scale={islandPosition}
             rotation={islandRotaion}
             isRotating={isRotating}
             setIsRotating={setIsRotating}
+            setCurrentStage={setcurrentStage}
+            // rotation={[0.1, 4.7077, 0]}
           />
           <Plane
             isRotating={isRotating}
             position={biplanePosition}
-            rotation={[0, 20.1, 0]}
+            rotation={[0, 20, 0]}
             scale={biplaneScale}
           />
         </Suspense>
