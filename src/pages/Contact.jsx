@@ -2,9 +2,10 @@ import emailjs from "@emailjs/browser";
 import { Canvas } from "@react-three/fiber";
 import { Suspense, useRef, useState } from "react";
 
-import { Fox } from "../models";
+import Fox from "../models/Fox";
+import Loader from "../components/Loader";
 import useAlert from "../hooks/useAlert";
-import { Alert, Loader } from "../components";
+import Alert from "../components/Alert";
 
 const Contact = () => {
   const formRef = useRef();
@@ -33,7 +34,7 @@ const Contact = () => {
           from_name: form.name,
           to_name: "Vishal",
           from_email: form.email,
-          to_email: "vishal.rajput.work@gmail.com",
+          to_email: "devwindyt@gmail.com",
           message: form.message,
         },
         import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
@@ -72,8 +73,8 @@ const Contact = () => {
   };
 
   return (
-    <section className="relative flex lg:flex-row flex-col max-container">
-      {alert.show && <Alert {...alert} />}
+    <section className="relative flex lg:flex-row flex-col max-container  bg-slate-200">
+      {alert.show && <Alert {...Alert} />}
 
       <div className="flex-1 min-w-[50%] flex flex-col">
         <h1 className="head-text">Get in Touch</h1>
