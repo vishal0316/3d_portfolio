@@ -1,9 +1,11 @@
-import React from 'react'
+import React from "react";
 
 const About = () => {
-  return (
-    <div>About</div>
-  )
-}
+  return <section className="max-container">
 
-export default About
+
+    
+  </section>;
+};
+
+export default About;
