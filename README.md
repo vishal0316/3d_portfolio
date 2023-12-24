@@ -31,3 +31,15 @@ To get a local copy up and running follow these simple steps:
 git clone https://github.com/vishal0316/3d_portfolio
 
 
+2. Navigate to the project directory:
+
+cd 3d_portfolio
+
+3. Install project dependencies:
+
+npm install
+
+4. Start the development server:
+
+npm run dev
+
