@@ -181,3 +181,32 @@ body:has(.card[data-color="green"]:hover) {
   box-shadow: 0.6vmin 0.6vmin #fff, 1vmin 1vmin #d2e4ff, 1vmin 1vmin #d2e4ff,
     0.65vmin 1vmin #d2e4ff, 1vmin 0.65vmin #d2e4ff;
 }
+
+/* .cta {
+  @apply bg-gray-200 p-4 text-center;
+} */
+
+.cta-buttons {
+  display: flex;
+  gap: 4rem;
+  padding-right: 2rem;
+}
+.cta-text {
+  @apply text-lg mb-4;
+}
+
+.cta-buttons {
+  @apply mb-4;
+}
+
+.cta-icon {
+  @apply text-xl mr-2;
+}
+
+.btn {
+  @apply inline-block px-4 py-2 bg-blue-500 text-white no-underline rounded transition duration-300 ease-in-out;
+}
+
+.btn:hover {
+  @apply bg-blue-700;
+}
