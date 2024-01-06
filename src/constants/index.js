@@ -123,19 +123,19 @@ export const experiences = [
       "Tackled real-world web development problems.",
     ],
   },
-  //   {
-  //     title: "React Native Developer",
-  //     company_name: "Tesla",
-  //     icon: tesla,
-  //     iconBg: "#fbc3bc",
-  //     date: "Jan 2021 - Feb 2022",
-  //     points: [
-  //       "Developing and maintaining web applications using React.js and other related technologies.",
-  //       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-  //       "Implementing responsive design and ensuring cross-browser compatibility.",
-  //       "Participating in code reviews and providing constructive feedback to other developers.",
-  //     ],
-  //   },
+  {
+    title: "Open Source ontributor",
+    company_name: "Social Winter of Code",
+    icon: tesla,
+    iconBg: "#fbc3bc",
+    date: "Jan 2024 - Feb 2024",
+    points: [
+      "Developing and maintaining web applications using HTML , CSS and JS and other related technologies.",
+      "Developed responsive contact pages and footer to optimize user experience.",
+      "Implementing responsive design and ensuring cross-browser compatibility.",
+      "Participating in code reviews and providing constructive feedback to other developers.",
+    ],
+  },
   //   {
   //     title: "Web Developer",
   //     company_name: "Shopify",
@@ -224,12 +224,12 @@ export const projects = [
   //     "Developed a web application for real estate listings, facilitating property searches and connecting buyers with sellers.",
   //   link: "https://github.com/adrianhajdin/projects_realestate",
   // },
-  // {
-  //   iconUrl: summiz,
-  //   theme: "btn-back-yellow",
-  //   name: "AI Summarizer Application",
-  //   description:
-  //     "App that leverages AI to automatically generate concise & informative summaries from lengthy text content, or blogs.",
-  //   link: "https://github.com/adrianhajdin/project_ai_summarizer",
-  // },
+  {
+    iconUrl: summiz,
+    theme: "btn-back-yellow",
+    name: "Bubble-Game",
+    description:
+      "Bubble Game using HTML CSS and JS tricks like event bubbling  .",
+    link: "https://github.com/vishal0316/Bubble-Game",
+  },
 ];
