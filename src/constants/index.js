@@ -186,10 +186,10 @@ export const projects = [
   {
     iconUrl: pricewise,
     theme: "btn-back-red",
-    name: "Blood Bank App",
+    name: "Pocket Flow ",
     description:
-      "The MERN Stack Blood Bank Project utilizes MongoDB, Express.js, React.js, and Node.js for efficient blood donation management. Features include donor registration, blood requests, inventory management, user authentication, and search functionality.",
-    link: "https://github.com/vishal0316/Blood-Bank-App",
+      "Pocket Flow is a simple and efficient expense tracker built using React and Firebase. It allows you to seamlessly manage your income and expenses, providing a user-friendly interface with Google authentication and responsive design.",
+    link: "https://github.com/vishal0316/pocket-flow",
   },
   {
     iconUrl: threads,
