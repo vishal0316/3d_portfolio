@@ -227,9 +227,9 @@ export const projects = [
   {
     iconUrl: summiz,
     theme: "btn-back-yellow",
-    name: "Bubble-Game",
+    name: "Obsy Clone",
     description:
-      "Bubble Game using HTML CSS and JS tricks like event bubbling  .",
-    link: "https://github.com/vishal0316/Bubble-Game",
+      "Obsy Agency Clone is a website project created with HTML, CSS, and JavaScript. Responsive Design with Media QueriesGSAP Animations for Enhanced User ExperienceSmooth Scrolling with Locomotive Shery.js Library Integration",
+    link: "https://github.com/vishal0316/Obsy",
   },
 ];
