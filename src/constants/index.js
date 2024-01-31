@@ -124,7 +124,7 @@ export const experiences = [
     ],
   },
   {
-    title: "Open Source ontributor",
+    title: "Open Source Contributor",
     company_name: "Social Winter of Code",
     icon: tesla,
     iconBg: "#fbc3bc",
