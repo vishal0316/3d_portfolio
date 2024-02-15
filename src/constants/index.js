@@ -19,7 +19,7 @@ import {
   react,
   redux,
   sass,
-  snapgram,
+  Music,
   summiz,
   tailwindcss,
   threads,
@@ -209,7 +209,7 @@ export const projects = [
   //   link: "https://github.com/adrianhajdin/project_next13_car_showcase",
   // },
   {
-    iconUrl: snapgram,
+    iconUrl: Music,
     theme: "btn-back-pink",
     name: "Groovify: Music Streaming Platform",
     description:
