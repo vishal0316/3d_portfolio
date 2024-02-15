@@ -208,14 +208,14 @@ export const projects = [
   //     "Designed and built a mobile app for finding and comparing cars on the market, streamlining the car-buying process.",
   //   link: "https://github.com/adrianhajdin/project_next13_car_showcase",
   // },
-  // {
-  //   iconUrl: snapgram,
-  //   theme: "btn-back-pink",
-  //   name: "Full Stack Instagram Clone",
-  //   description:
-  //     "Built a complete clone of Instagram, allowing users to share photos and connect with friends in a familiar social media environment.",
-  //   link: "https://github.com/adrianhajdin/social_media_app",
-  // },
+  {
+    iconUrl: snapgram,
+    theme: "btn-back-pink",
+    name: "Groovify: Music Streaming Platform",
+    description:
+      "Groovify is a real-world project of a music streaming platform developed using ReactJS and Tailwind CSS. This app closely resembles the popular JioSaavn service and utilizes the JioSaavn API to fetch music data.",
+    link: "https://github.com/vishal0316/Groovify-MusicApp",
+  },
   // {
   //   iconUrl: estate,
   //   theme: "btn-back-black",
